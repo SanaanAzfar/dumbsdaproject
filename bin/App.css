@@ -1,0 +1,194 @@
+.root{
+    -fx-background-color:"black";
+}
+
+
+
+#menuPane {
+    -fx-background-color: #2b2b2b; 
+    -fx-background-radius: 10px; 
+    -fx-border-width: 0px; 
+}
+
+
+#groovyLabel{
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 30;
+    -fx-text-fill: #af61fdee;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+
+#songsLabel{
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 30;
+    -fx-text-fill: #af61fdee;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+
+#loginButton {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 15;
+    -fx-background-radius:10px;
+    -fx-background-color:#ffffff;
+    -fx-text-fill: "black";
+}
+
+#signupButton {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 15;
+    -fx-background-radius:10px;
+    -fx-background-color:rgb(255, 255, 255);
+    -fx-text-fill: "black";
+}
+
+#newsButton {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 15;
+    -fx-background-radius:10px;
+    -fx-background-color:#000000bc;
+    -fx-text-fill: "white";
+}
+
+#settingsButton {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 15;
+    -fx-background-radius:10px;
+    -fx-background-color:#000000bc;
+    -fx-text-fill: "white";
+}
+
+
+#playButton{
+    -fx-background-radius:50%;
+    -fx-background-color:#000000bc;
+    -fx-text-fill:#af61fdee;
+    -fx-font-size:20;
+    -fx-alignment: center;
+
+}
+
+#prevButton{
+    -fx-background-radius:50%;
+    -fx-background-color:#000000bc;
+    -fx-text-fill:#af61fdee;
+    -fx-font-size:20;
+    -fx-alignment: center;
+
+}
+
+#nextButton{
+    -fx-background-radius:50%;
+    -fx-text-fill:#af61fdee;
+    -fx-background-color:#000000bc;
+    -fx-font-size:20;
+    -fx-alignment: center;
+
+}
+
+#nameLabel {
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #af61fdee;
+    -fx-background-color: black;
+}
+
+#artistLabel {
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #af61fdee;
+    -fx-background-color: black;
+}
+
+#genreLabel {
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #af61fdee;
+    -fx-background-color: black;
+}
+
+#releaseDateLabel {
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #af61fdee;
+    -fx-background-color: black;
+}
+
+
+#name{
+    -fx-background-color : "black";
+    -fx-border-width : 0px;
+}
+
+#artist{
+    -fx-background-color : "black";
+}
+
+#genre{
+    -fx-background-color : "black";
+}
+
+#releaseDate{
+    -fx-background-color : "black";
+}
+
+
+#songsTable{
+    -fx-border-with : 0px;
+    -fx-background-color : "black";
+}
+
+
+
+
+
+
+.scroll-pane {
+    -fx-background-color: black;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(59, 54, 54, 0.571);
+    -fx-background-radius: 5em;
+}
+
+#songsList{
+    -fx-background-color: #000000ee;
+    -fx-border-width:2px;
+    -fx-border-radius:10px;
+    -fx-border-color:#4c484855
+}
+
+.list-cell {
+    -fx-text-fill: #af61fdee; /* Set the text color to red */
+    -fx-background-color: #000000ee;
+    -fx-font-size:15;
+
+}
+
+
+#status{
+    -fx-font-family: "Monospaced";
+    -fx-text-fill: #af61fdee;
+    -fx-background-color: black;
+}
+
+.alert {
+    -fx-background-color: black;
+    -fx-text-fill: #af61fdee;
+    -fx-font-family: "Monospaced";
+}
