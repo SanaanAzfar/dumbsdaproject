@@ -12,8 +12,8 @@
    <children>
       <Pane fx:id="menuPane" layoutX="14.0" layoutY="57.0" prefHeight="188.0" prefWidth="211.0">
          <children>
-            <Button fx:id="newsButton" layoutX="22.0" layoutY="96.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="172.0" text="News" />
-            <Button fx:id="settingsButton" layoutX="22.0" layoutY="140.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="172.0" text="Settings" />
+            <Button fx:id="newsButton" layoutX="22.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToNews" prefHeight="34.0" prefWidth="172.0" text="News" />
+            <Button fx:id="settingsButton" layoutX="22.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="34.0" prefWidth="172.0" text="Settings" />
             <Label fx:id="groovyLabel" layoutX="17.0" layoutY="14.0" prefHeight="71.0" prefWidth="182.0" text="Groovy" />
          </children>
       </Pane>

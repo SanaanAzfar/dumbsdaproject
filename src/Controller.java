@@ -94,6 +94,9 @@ public class Controller {
     private TextField loginPasswordField;
 
 
+    @FXML 
+    private Button back; 
+
 
     
 
@@ -176,6 +179,30 @@ public class Controller {
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         String css = this.getClass().getResource("Login.css").toExternalForm();
+        scene.getStylesheets().add(css);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToSettings(ActionEvent event) throws IOException 
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        String css = this.getClass().getResource("News.css").toExternalForm();
+        scene.getStylesheets().add(css);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToNews(ActionEvent event) throws IOException 
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("News.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        String css = this.getClass().getResource("News.css").toExternalForm();
         scene.getStylesheets().add(css);
 
         stage.setScene(scene);

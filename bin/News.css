@@ -1,0 +1,50 @@
+#back {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 15;
+    -fx-background-radius:10px;
+    -fx-background-color:#ffffff;
+    -fx-text-fill: "black";
+}
+
+
+#newsLabel{
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 30;
+    -fx-text-fill: #af61fdee;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+
+#streamQualityLabel{
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 15;
+    -fx-text-fill: #af61fdee;
+    -fx-alignment: center;
+    -fx-font-weight: 400;
+}
+
+
+
+
+
+#settingsLabel{
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 30;
+    -fx-text-fill: #af61fdee;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+.root{
+    -fx-background-color : "black";
+}
+
+.radio-button  {
+    -fx-text-fill: rgb(78, 255, 78);
+    -fx-font-family:"Monospaced";
+    -fx-font-size: 15;
+
+}
+
+.radio-button .radio > .dot {
+    -fx-background-color: #af61fdee;
+}

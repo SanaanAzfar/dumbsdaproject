@@ -3,6 +3,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -75,6 +77,16 @@ public class GroovyDatabaseManager
         return statement.executeQuery();
     }
 
+    public List<String> getSongNames() throws SQLException {
+        List<String> songNames = new ArrayList<>();
+        String sql = "SELECT name FROM Song";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        ResultSet resultSet = statement.executeQuery();
+        while (resultSet.next()) {
+            songNames.add(resultSet.getString("name"));
+        }
+        return songNames;
+    }
 
     public Song getSongByName(String name) throws SQLException 
     {

@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
 public class App extends Application 
@@ -26,6 +27,9 @@ public class App extends Application
             // stage configuration
             stage.setScene(scene);
             stage.setTitle("Groovy");
+
+
+            
 
             // display the stage
             stage.show();
