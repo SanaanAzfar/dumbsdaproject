@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="608.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea editable="false" layoutX="15.0" layoutY="57.0" prefHeight="160.0" prefWidth="579.0" style="-fx-background-color: black;" text="“Due to technical difficulties the&#10;feedback was not submitted,&#10; please try again later">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="1.0" layoutY="-2.0" prefHeight="38.0" prefWidth="608.0" style="-fx-background-color: Gray;" text="Oops!" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="516.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: purple;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
