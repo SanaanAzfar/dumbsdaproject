@@ -42,7 +42,33 @@ public class GroovyDatabaseManager
             statement.executeUpdate();
         }
     }
-
+    
+    public void addFeedback(feedback_form FormItem)
+    		throws SQLException {
+        String sql = "INSERT INTO Feedback (type, Title, comment, rating) VALUES (?, ?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) 
+        {
+            statement.setString(1, FormItem.type);
+            statement.setString(2, FormItem.Title);
+            statement.setString(3, FormItem.comment);
+            statement.setInt(4, FormItem.rating);
+            statement.executeUpdate();
+        }
+    }
+    
+    
+    public void addFeedback(String type,String Title,String comment,int rating)
+    		throws SQLException {
+        String sql = "INSERT INTO Feedback (type, Title, comment, rating) VALUES (?, ?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) 
+        {
+            statement.setString(1, type);
+            statement.setString(2, Title);
+            statement.setString(3, comment);
+            statement.setInt(4, rating);
+            statement.executeUpdate();
+        }
+    }
     public Song getSong(int id) throws SQLException 
     {
         String sql = "SELECT * FROM Song WHERE ID = ?";

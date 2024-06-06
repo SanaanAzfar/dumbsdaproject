@@ -1,6 +1,6 @@
-/FeedBack_Conformation.fxml
-/FeedBack_Errorfxml.fxml
-/Feedback_form.fxml
-/Song_Upload.fxml
-/discussion_form.fxml
-/discussion_form_create.fxml
+/feedback_form.class
+/FeedBack_form.class
+/feedback_form_controller.class
+/Discussion_form.class
+/feedBack_conformation.class
+/FeedBack_Error.fxml
