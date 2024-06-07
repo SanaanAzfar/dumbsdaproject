@@ -159,7 +159,7 @@ public class Song_Upload_Controller {
     	FileChooser fc = new FileChooser();
 
     	FileChooser.ExtensionFilter extesions = 
-    	  new FileChooser.ExtensionFilter(".ogg", "*.mp3", "*.Wav");
+    	  new FileChooser.ExtensionFilter(".ogg", "*.mp3", "*.wav");
 
     	fc.getExtensionFilters().add(extesions);
     	fc.setTitle("Upload Song");

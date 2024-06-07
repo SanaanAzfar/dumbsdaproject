@@ -13,7 +13,7 @@ public class GroovyDatabaseManager
 {
     private static final String URL = "jdbc:mysql://localhost:3306/Groovy";
     private static final String USER = "root";
-    private static final String PASSWORD = "capybaralord";
+    private static final String PASSWORD = "sanaanazfar742004";
 
     private Connection connection;
 
@@ -56,6 +56,21 @@ public class GroovyDatabaseManager
         }
     }
     
+    public void addDiscussion_form(discussion_form FormItem)
+    		throws SQLException {
+        String sql = "INSERT INTO Discussion (type, Title, comment) VALUES (?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) 
+        {
+            statement.setString(1, FormItem.type);
+            statement.setString(2, FormItem.title);
+            statement.setString(3, FormItem.comment);
+            statement.executeUpdate();
+        }
+    }
+    
+    
+    public void Add_FeedBack_To_Table() 
+    {}
     
     public void addFeedback(String type,String Title,String comment,int rating)
     		throws SQLException {
@@ -69,6 +84,8 @@ public class GroovyDatabaseManager
             statement.executeUpdate();
         }
     }
+    
+    
     public Song getSong(int id) throws SQLException 
     {
         String sql = "SELECT * FROM Song WHERE ID = ?";
