@@ -42,6 +42,16 @@ public class Controller {
     private Button loginButton;
 
     @FXML
+    private Button Discussion_form_button;
+
+    @FXML
+    private Button Feedback_button;
+
+    @FXML
+    private Button Songs_button;
+
+    
+    @FXML
     private Pane menuPane;
 
     @FXML
@@ -208,4 +218,37 @@ public class Controller {
         stage.setScene(scene);
         stage.show();
     }
+    
+    @FXML
+    void Naviagate_to_feedback(ActionEvent event) throws IOException {
+    	Parent root = FXMLLoader.load(getClass().getResource("Feedback_form.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    void Navigate_to_discussion_form(ActionEvent event) throws IOException {
+    	Parent root = FXMLLoader.load(getClass().getResource("discussion_form_create.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void navigate_To_Songs(ActionEvent event) throws IOException {
+    	Parent root = FXMLLoader.load(getClass().getResource("Song_Upload.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
 }

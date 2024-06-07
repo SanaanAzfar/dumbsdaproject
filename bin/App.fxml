@@ -10,11 +10,14 @@
 
 <AnchorPane fx:id="homeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="822.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
-      <Pane fx:id="menuPane" layoutX="14.0" layoutY="57.0" prefHeight="188.0" prefWidth="211.0">
+      <Pane fx:id="menuPane" layoutX="14.0" layoutY="57.0" prefHeight="317.0" prefWidth="211.0">
          <children>
             <Button fx:id="newsButton" layoutX="22.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToNews" prefHeight="34.0" prefWidth="172.0" text="News" />
             <Button fx:id="settingsButton" layoutX="22.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="34.0" prefWidth="172.0" text="Settings" />
             <Label fx:id="groovyLabel" layoutX="17.0" layoutY="14.0" prefHeight="71.0" prefWidth="182.0" text="Groovy" />
+            <Button fx:id="Songs_button" layoutX="22.0" layoutY="186.0" mnemonicParsing="false" onAction="#navigate_To_Songs" prefHeight="34.0" prefWidth="172.0" text="Songs" />
+            <Button fx:id="Discussion_form_button" layoutX="21.0" layoutY="234.0" mnemonicParsing="false" onAction="#Navigate_to_discussion_form" prefHeight="34.0" prefWidth="172.0" text="Discussion forms" />
+            <Button fx:id="Feedback_button" layoutX="22.0" layoutY="279.0" mnemonicParsing="false" onAction="#Naviagate_to_feedback" prefHeight="34.0" prefWidth="172.0" text="Feed Back" />
          </children>
       </Pane>
       <Button fx:id="signupButton" layoutX="826.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="34.0" prefWidth="121.0" text="Sign Up" />
